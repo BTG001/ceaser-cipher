@@ -1,8 +1,11 @@
 public class Decode {
+    private int key;
+
     public Decode(int key, String phrase) {
+        this.key = key;
     }
 
     public int getKey() {
-        return 0;
+        return this.key;
     }
 }
