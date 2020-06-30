@@ -13,4 +13,10 @@ public class DecodeTest {
         Decode testDecode = new Decode(2, "btg");
         assertEquals(2, testDecode.getKey());
     }
+
+    @Test
+    public void newDecode_getPhrase_btg() {
+        Decode testDecode = new Decode(2, "btg");
+        assertEquals("btg", testDecode.getPhrase());
+    }
 }
