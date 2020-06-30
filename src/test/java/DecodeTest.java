@@ -19,4 +19,12 @@ public class DecodeTest {
         Decode testDecode = new Decode(2, "btg");
         assertEquals("btg", testDecode.getPhrase());
     }
+
+    @Test
+    public void exceptionTesting() {
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
+            Decode testDecode = new Decode(2, "2");
+        });
+        assertEquals("Kindly enter a String", exception.getMessage());
+    }
 }
