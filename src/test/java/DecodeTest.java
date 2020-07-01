@@ -1,6 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
+
 public class DecodeTest {
     @Test
     public void newDecode_instantiatesCorrectly() {
@@ -20,11 +21,4 @@ public class DecodeTest {
         assertEquals("btg", testDecode.getPhrase());
     }
 
-    @Test
-    public void exceptionTesting() {
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-            Decode testDecode = new Decode(2, "2");
-        });
-        assertEquals("Kindly enter a String", exception.getMessage());
-    }
 }
