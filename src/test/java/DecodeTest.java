@@ -1,5 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class DecodeTest {
@@ -21,4 +23,11 @@ public class DecodeTest {
         assertEquals("btg", testDecode.getPhrase());
     }
 
+    @Test
+    public void exceptionTesting() {
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
+            Decode testDecode = new Decode(2, "2");
+        });
+        assertEquals("Kindly enter a string", exception.getMessage());
+    }
 }

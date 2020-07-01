@@ -23,7 +23,7 @@ public class EncodeTest {
     }
 
     @Test
-    public void newEncode_getNotWord_2() {
+    public void newEncode_getNotPhrase_2() {
         assertThrows(
                 NullPointerException.class,
                 () -> { throw new NullPointerException(); }
