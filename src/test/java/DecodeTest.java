@@ -25,6 +25,12 @@ public class DecodeTest {
 
     @Test
     public void exceptionTesting() {
-        Encode testEncode = new Encode(2, "");
+        Decode testDecode = new Decode(2, "");
+    }
+
+    @Test
+    public void newEncode_getCharater_a() {
+        Decode testDecode = new Decode(2, "c");
+        assertEquals("a", testDecode.decodePhrase(2, "a"));
     }
 }
