@@ -40,4 +40,9 @@ public class EncodeTest {
         Encode testEncode = new Encode(2, "a");
         assertEquals("c", testEncode.encodePhrase(2, "a"));
     }
+
+    @Test
+    public void newEncode_getPhraseWithSpace_i_play() {
+        Encode testEncode = new Encode(2, "i play");
+    }
 }
