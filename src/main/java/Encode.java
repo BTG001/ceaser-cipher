@@ -9,4 +9,7 @@ public class Encode {
             throw new IllegalArgumentException("please enter a string");
         }
     }
+    public int getKey() {
+        return this.key;
+    }
 }
