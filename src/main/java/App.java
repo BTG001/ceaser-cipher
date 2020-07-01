@@ -17,9 +17,19 @@ public class App {
             String stringInputKey = bufferedReader.readLine();
             int inputKey = Integer.parseInt(stringInputKey);
 
-            Encode encode = new Encode(inputKey, stringInputKey);
-            String encodedString = encode.encodePhrase(inputKey, stringInputKey);
-            System.out.println(encodedString);
+            Encode encode = new Encode(inputKey, stringUserInput);
+            String encodedString = encode.encodePhrase(inputKey, stringUserInput);
+            System.out.println("Encrypted string: " + encodedString);
+
+            System.out.println("enter THE number as key");
+            String stringDecodeKey = bufferedReader.readLine();
+            int decodeKey = Integer.parseInt(stringDecodeKey);
+
+            Decode decode = new Decode(inputKey, encodedString);
+            String decodedString = decode.decodePhrase(inputKey, stringUserInput);
+            System.out.println("Decrypted String: " + decodedString);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
