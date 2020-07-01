@@ -12,4 +12,7 @@ public class Encode {
     public int getKey() {
         return this.key;
     }
+    public String getPhrase() {
+        return this.phrase;
+    }
 }

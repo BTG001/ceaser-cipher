@@ -21,4 +21,12 @@ public class EncodeTest {
         Encode testEncode = new Encode(2, "bonu");
         assertEquals("bonu", testEncode.getPhrase());
     }
+
+    @Test
+    public void newEncode_getNotWord_2() {
+        assertThrows(
+                NullPointerException.class,
+                () -> { throw new NullPointerException(); }
+        );
+    }
 }
