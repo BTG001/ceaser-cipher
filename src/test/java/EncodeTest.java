@@ -44,5 +44,6 @@ public class EncodeTest {
     @Test
     public void newEncode_getPhraseWithSpace_i_play() {
         Encode testEncode = new Encode(2, "i play");
+        assertEquals("k rnca", testEncode.encodePhrase(2, "i play"));
     }
 }
