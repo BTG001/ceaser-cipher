@@ -24,10 +24,6 @@ public class DecodeTest {
     }
 
     @Test
-    public void exceptionTesting() {
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-            Decode testDecode = new Decode(2, "2");
-        });
-        assertEquals("Kindly enter a string", exception.getMessage());
+    public void name() {
     }
 }

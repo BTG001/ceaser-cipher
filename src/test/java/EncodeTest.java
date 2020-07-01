@@ -29,4 +29,9 @@ public class EncodeTest {
                 () -> { throw new NullPointerException(); }
         );
     }
+
+    @Test
+    public void exceptionTesting() {
+        Encode testEncode = new Encode(2, "");
+    }
 }
