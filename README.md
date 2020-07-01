@@ -18,7 +18,7 @@ This Application is used for encoding and decoding. The key is an integer from 1
 
 ### Github Pages
 
-Here is a link to the live site on Github Pages
+Here is a link to the live site on Github Pages "https://btg001.github.io/ceaser-cipher/"
 
 ### Contact Information
 
