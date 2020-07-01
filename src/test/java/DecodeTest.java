@@ -33,4 +33,10 @@ public class DecodeTest {
         Decode testDecode = new Decode(2, "c");
         assertEquals("a", testDecode.decodePhrase(2, "a"));
     }
+
+    @Test
+    public void newEncode_getPhraseWithSpace_i_play() {
+        Decode testDecode = new Decode(2, "k rnca");
+        assertEquals("i play", testDecode.decodePhrase(2, "k rnca"));
+    }
 }
