@@ -34,4 +34,10 @@ public class EncodeTest {
     public void exceptionTesting() {
         Encode testEncode = new Encode(2, "");
     }
+
+    @Test
+    public void newEncode_getCharacter_c() {
+        Encode testEncode = new Encode(2, "a");
+        assertEquals("c", testEncode.encodePhrase(2, "a"));
+    }
 }
