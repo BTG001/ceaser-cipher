@@ -24,6 +24,7 @@ public class DecodeTest {
     }
 
     @Test
-    public void name() {
+    public void exceptionTesting() {
+        Encode testEncode = new Encode(2, "");
     }
 }

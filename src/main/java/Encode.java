@@ -6,7 +6,7 @@ public class Encode {
         this.key = key;
         this.phrase = phrase;
         if ((this.phrase == null)) {
-            throw new IllegalArgumentException("Kindly enter a string");
+            throw new IllegalArgumentException("kindly enter a string");
         }
     }
     public int getKey() {
