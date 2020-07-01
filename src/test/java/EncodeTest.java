@@ -9,4 +9,10 @@ public class EncodeTest {
         Encode testEncode = new Encode(2, "bonu");
         assertEquals(true, testEncode instanceof Encode);
     }
+
+    @Test
+    public void newEncode_getKey_2() {
+        Encode testEncode = new Encode(2, "bonu");
+        assertEquals(2, testEncode.getKey());
+    }
 }
